@@ -1,0 +1,29 @@
+ <div class="container">
+    <div class="row" >
+        <div class="col column">
+            <h2 class="signup-heading">Sign Up</h2>
+
+            <!-- ngFrom is for template driven form -->
+            <form #userlogin="ngForm" (ngSubmit)="userverify()"> 
+                <div class="form-group inputs">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" [(ngModel)]="User.email" #email="ngModel"[class.is-invalid]="email.invalid && email.touched" id="exampleInputEmail1"  aria-describedby="emailHelp" name="name" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+                    <small class="text-danger" [class.d-none]="email.valid || email.untouched">Enter valid email</small>
+                </div>
+
+                <div class="mb-3 form-group inputs">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" [(ngModel)]="User.password" #password="ngModel"[class.is-invalid]="password.invalid && password.touched" id="exampleInputPassword1" name="password" required minlength="8">
+                    <small class="text-danger" [class.d-none]="password.valid || password.untouched">Enter valid password</small>
+                </div>
+                <!-- <input type="file" class="file-input"> -->
+
+                <br><button type="submit" class="btn btn-primary submit-button " [disabled]="userlogin.form.invalid" >SignUp</button>
+
+                
+
+            </form>
+        </div>
+    </div>                                                                      
+</div>
+     

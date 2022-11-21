@@ -1,0 +1,38 @@
+.container{
+    border: 1px solid black;
+    width: 40%;
+    background-color: whitesmoke;
+    padding: 20px;
+    
+}
+
+.submit-button{
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    margin-bottom: 20px;
+}
+
+.signup-heading{
+    margin-bottom: 30px;
+}
+
+  /* -------------------------------------------------small-------------------------------------------- */
+@media(max-width: 430px){
+    .container{
+        border: 1px solid black;
+        width: 70%;
+        background-color: whitesmoke;
+        padding: 20px;
+        
+    }
+}
+/* -------------------------------------------------medium------------------------------------------- */
+@media(max-width: 1200px){
+    
+}
+/* -------------------------------------------------large-------------------------------------------- */
+@media(min-width: 1200px){
+}

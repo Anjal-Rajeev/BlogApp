@@ -1,0 +1,17 @@
+<div class="comments">
+    <div class="comment-body">
+        <h4>Comments:</h4>
+
+        <h6 *ngFor="let comment of comments" class="comment-name">{{comment.name}}: <span class="comment-item">{{comment.content}}</span> <hr></h6>
+   
+    </div>
+    <form (ngSubmit)="addNewComment(data._id, newComment)">
+    <div class="comment-input">
+        <input type="text" name="name"  placeholder="Name" class="name-input" [(ngModel)]="newComment.name">
+        <input type="text" name="cmnt"  placeholder="Enter your comment" [(ngModel)]="newComment.content">
+        <button >Send</button>
+        <!-- (click)="commentSend()" -->
+    </div>
+    </form> 
+</div>
+

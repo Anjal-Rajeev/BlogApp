@@ -1,0 +1,281 @@
+.blogBody{
+    height: 70%;
+    background-color:#F2E7D5;
+}
+.avatar{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+    margin-right: 20px;
+}
+.blogerName{
+    display: inline;
+    font-size:large;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+}
+.followButton{
+    margin-left: 10px;
+    padding: 3px;
+    width: 80px;
+    border-radius: 10%;
+    background-color: #8BBCCC;
+    border: 1px solid #256D85;
+}
+.followButton:hover{
+    background-color: antiquewhite;
+    border: 1px solid #256D85;
+    color: black;
+}
+
+.followers{
+    font-size: medium;
+    display: inline;
+    margin-left: 10px
+}
+.post{
+    border: 1px solid rebeccapurple;
+    height: 85%;
+    /* padding: 10px; */
+}
+
+.row{
+    height: 95%;
+    /* margin-left: 1px; */
+    
+}
+
+.col1{
+    /* border: 1px solid red; */
+    height: 90%;
+    margin-top: 10px;
+    
+}
+
+.col1 h3{
+    font-weight: bold;
+}
+
+.col2{
+    /* border: 1px solid blue; */
+    height: 90%;
+    padding: 0; 
+}
+
+aside{
+    padding-top: 10px;
+    /* border: 1px solid green; */
+}
+
+.blog-para{
+    /* display: inline; */
+    margin-top: 20px;
+}
+
+.buttons button{
+    margin: 10px !important;
+    width: 78px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 7%;
+}
+.buttons button:hover{
+    background-color: #256D85;
+    color: white;
+}
+.buttons button:focus{
+    background-color:#256D85;
+}
+
+/* -------------------------------------------------medium------------------------------------------- */
+@media(max-width: 1200px){
+    .blog-image{
+        height: 200px;
+        width: 70%;
+        
+    }
+    .row{
+        height: 85%;
+    }
+    .col2{
+        /* border: 1px solid blue; */
+        height: auto;
+ 
+        
+    }  
+    .blogBody{
+        height: 80%;
+        background-color:#F2E7D5;
+    }
+    .avatar{
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        margin: 15px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .blogerName{
+        display: inline;
+        font-size:small;
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+    }
+    .followButton{
+        margin-left: 10px;
+        padding: 3px;
+        width: 60px;
+        border-radius: 10%;
+        background-color: #8BBCCC;
+        border: 1px solid #256D85;
+        font-size: small;
+        
+    }
+    .followButton:hover{
+        background-color: antiquewhite;
+        border: 1px solid #256D85;
+        color: black;
+    }
+    .followers{
+        font-size: smaller;
+        
+    }
+    .row{
+        height: 100% !important;
+    }
+    .col1{
+        border: 1px solid red;
+        height: auto;
+        padding: 10px;
+        
+    }
+    .col2{
+        /* border: 1px solid green !important; */
+        height: 33% !important;
+        padding-top: 50px;
+        
+    }   
+    
+    .blog-image{
+        width: 100%;
+        /* border: 1px solid black; */
+        /* position: relative;
+        right: 25% !important; */
+    }
+    .blog-para{
+        font-size: medium;
+        text-align: justify;
+    }
+ 
+    .buttons button{
+        margin: 10px !important;
+        width: 78px;
+        padding: 3px;
+        position: relative;
+        bottom: 16em;
+        align-items: center !important;
+
+    }
+
+}
+
+/* -------------------------------------------------small-------------------------------------------- */
+@media(max-width: 430px){
+    .blogBody{
+        height: 80%;
+        background-color:#F2E7D5;
+    }
+    .avatar{
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        margin: 15px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .blogerName{
+        display: inline;
+        font-size:small;
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+    }
+    .followButton{
+        margin-left: 10px;
+        padding: 3px;
+        width: 60px;
+        border-radius: 10%;
+        background-color: #8BBCCC;
+        border: 1px solid #256D85;
+        font-size: small;
+        
+    }
+    .followButton:hover{
+        background-color: antiquewhite;
+        border: 1px solid #256D85;
+        color: black;
+    }
+    .followers{
+        font-size: smaller;
+        
+    }
+    .row{
+        height: 100% !important;
+    }
+    .col1{
+        border: 1px solid red;
+        height: auto;
+        padding: 10px;
+        
+    }
+    .col2{
+        /* border: 1px solid green !important; */
+        height: 33% !important;
+        padding-top: 50px;
+        
+    }   
+    .col1 h3{
+        font-size: medium;
+    }
+    .blog-image{
+        width: 100%;
+        /* border: 1px solid black; */
+        /* position: relative;
+        right: 25% !important; */
+    }
+    .blog-para{
+        font-size: smaller;
+        text-align: justify;
+    }
+ 
+    .buttons button{
+        margin: 10px !important;
+        width: 78px;
+        padding: 3px;
+        position: relative;
+        bottom: 20em;
+        align-items: center !important;
+
+    }
+
+
+}
+
+/* -------------------------------------------------large-------------------------------------------- */
+@media(min-width: 1200px){
+
+    .blog-image{
+        width: 50%;
+        /* border: 1px solid black; */
+        position: relative;
+        left: 25%;
+        
+        
+    }
+    .blog-para{
+        text-align: justify;
+    }
+}

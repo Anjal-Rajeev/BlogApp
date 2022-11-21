@@ -1,0 +1,30 @@
+<div class="container blogBody">
+    <img src={{data.avatar}} alt="" class="avatar">
+    <p class="blogerName">{{data.bloggerName}}</p>
+    <button (click)="follow(data._id,data.followingStatus)" class="followButton">{{data.followingStatus}}</button>
+    <p class="followers">followers : {{data.followers}}</p>
+    <div class="container post">
+        <div class="row">
+            <div class="col col-lg-8 col-12 col1">
+                <h3>{{data.blogHeading}}</h3>
+                <p >{{data.subHeading}}</p>
+                <aside>
+                    <img src={{data.blogImage}} alt="" class="blog-image">
+                    
+
+                </aside>
+                <p class="blog-para ">{{data.blogPara}}</p>
+            </div>
+            <div class="col col-lg-4 col-12 col2">
+               <router-outlet></router-outlet>
+            </div>
+            <div class="buttons">
+                <button>Like</button>
+                <a routerLink={{url}}><button (click)="path()">Comment</button></a>
+                <button>Share</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+ 
